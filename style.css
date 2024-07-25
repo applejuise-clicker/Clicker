@@ -1,0 +1,110 @@
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #000000; /* Change background color to black */
+    color: white;
+    margin: 0;
+    padding: 0;
+    transition: background-color 0.5s; /* Smooth transition for background color */
+}
+
+#clicker {
+    margin-top: 50px;
+    text-align: center;
+}
+
+#click-avatar {
+    width: 100px;
+    cursor: pointer;
+    transition: filter 0.5s; /* Smooth transition for filter effect */
+}
+
+#menu {
+    margin-top: 20px;
+}
+
+#menu img {
+    width: 50px;
+    margin: 0 10px;
+    cursor: pointer;
+}
+
+.menu-interface {
+    display: none;
+    margin-top: 20px;
+    border: 1px solid #ccc;
+    padding: 10px;
+    background-color: #fff;
+    border-radius: 15px;
+    color: black;
+}
+
+#shop, #exchange {
+    position: absolute;
+    top: 100px;
+    right: 50px;
+}
+
+.icon {
+    width: 20px;
+    vertical-align: middle;
+}
+
+@media (max-width: 600px) {
+    #shop, #exchange {
+        top: auto;
+        bottom: 50px;
+    }
+}
+
+#autoclicker-toggle {
+    margin-top: 10px;
+    cursor: pointer;
+    user-select: none;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+#shop button {
+    display: block;
+    margin: 10px 0;
+}
+
+.autoclicker-on {
+    background-color: #4CAF50;
+    color: white;
+}
+
+.autoclicker-off {
+    background-color: white;
+    color: black;
+    border: 1px solid #ccc;
+}
+
+.autoclicker-on:hover {
+    background-color: #45a049;
+}
+
+.autoclicker-off:hover {
+    background-color: #f0f0f0;
+}
+
+.strikethrough {
+    text-decoration: line-through;
+}
+
+#clicker.flash {
+    filter: invert(1); /* Invert colors for the flash effect */
+}
+
+#flash-message {
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
+    color: red;
+    font-weight: bold;
+}
